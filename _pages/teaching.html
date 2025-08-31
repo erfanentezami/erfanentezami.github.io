@@ -7,6 +7,38 @@ author_profile: true
 
 {% include base_path %}
 
+
+<h2>Instructor</h2>
+<ul>
+{% assign instructor_courses = site.teaching | where: "role", "instructor" | sort: "date" | reverse %}
+{% for course in instructor_courses %}
+  <li>
+    {% if course.course_url %}
+      <a href="{{ course.course_url }}">{{ course.title }}</a>
+    {% else %}
+      {{ course.title }}
+    {% endif %}
+    ({{ course.semester }})
+  </li>
+{% endfor %}
+</ul>
+
+<h2>Teaching Assistant</h2>
+<ul>
+{% assign ta_courses = site.teaching | where: "role", "ta" | sort: "date" | reverse %}
+{% for course in ta_courses %}
+  <li>
+    {% if course.course_url %}
+      <a href="{{ course.course_url }}">{{ course.title }}</a>
+    {% else %}
+      {{ course.title }}
+    {% endif %}
+    ({{ course.semester }})
+  </li>
+{% endfor %}
+</ul>
+<!-- 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
+-->

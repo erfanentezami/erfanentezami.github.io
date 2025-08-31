@@ -26,7 +26,7 @@ author:
   name             : "Erfan Entezami"
   pronouns         : # example: "she/her"  
   bio              : #"Short biography for the left-hand sidebar"
-  location         : "Massachusetts, USA"
+  location         : #"Massachusetts, USA"
   employer         : "UMass Amherst"
   uri              : # URL
   email            : "eentezami@umass.edu" 
@@ -61,7 +61,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         :  erfan-entezami
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
