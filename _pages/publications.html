@@ -16,16 +16,17 @@ author_profile: true
 {% for post in site.publications reversed %}
   <div class="publication" style="margin-bottom: 1em;">
     <strong>
-      {% if post.url %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
       {% else %}
         {{ post.title }}
       {% endif %}
     </strong>
     <br>
-    {{ post.publication }}
+    {{ post.venue }}
   </div>
 {% endfor %}
+
 
 
 
