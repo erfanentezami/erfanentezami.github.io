@@ -1,5 +1,5 @@
 ---
-title: "Linear Algebra"
+title: "CICS 291S: Seminar - CICS Second Year Pathways"
 collection: teaching
 role: instructor
 semester: "Spring 2025"
